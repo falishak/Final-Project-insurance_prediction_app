@@ -11,7 +11,7 @@ df = pd.read_csv("insurance.csv")
 
 # Distribution of Insurance Charges by Age
 st.subheader("Distribution of Insurance Charges by Age")
-sns.kdeplot(df['age'], df['charges'], fill=True, cmap="Blues", shade=True)
+sns.kdeplot(x=df['age'], y=df['charges'], fill=True, cmap="Blues", shade=True)
 st.pyplot()
 
 # Boxplot of Insurance Charges by Sex
